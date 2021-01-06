@@ -1,3 +1,5 @@
+
+
 # 服务热重启
 
 # 前言
@@ -11,7 +13,7 @@
 - 接入层负载均衡，轮次更新
 - 子进程监听父的端口（fd复用/端口复用），父进程在处理完请求后退出
 
-因为http
+
 
 ### 服务热更新方案
 
@@ -24,6 +26,8 @@
 #### 验证方案
 
 长链接，延迟10s再回包即可， 对比下直接暴力关闭和graceful 重启是否可以做到。
+
+
 
 ![image-20210106191905910](/Users/hhs/Library/Application Support/typora-user-images/image-20210106191905910.png)
 
@@ -39,7 +43,11 @@
 
 经过验证，
 
-- 当延迟获取时，如果直接shutdown，会返回![image-20210106225542555](/Users/hhs/Library/Application Support/typora-user-images/image-20210106225542555.png)
+- 当延迟获取时，如果直接shutdown，会返回
+
+
+
+![image-20210106225542555](/Users/hhs/Library/Application Support/typora-user-images/image-20210106225542555.png)
 
 - 当使用graceful shutdown时，这个链接可以正常返回
 
