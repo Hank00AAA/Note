@@ -69,6 +69,10 @@
 
 [如何让多个进程监听同一个端口](https://blog.csdn.net/L13763338360/article/details/106519027)
 
+[trpc框架热更新机制]
 
+[nginx热更新机制]
+
+ [go-gin热更新机制]  
 
 [go-endless热更新机制](https://studygolang.com/articles/25123?fr=sidebar)
